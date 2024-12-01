@@ -1,18 +1,18 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+######################################################################
+#Title: app.R
+#Author: Lisa McQuarrie
+#Date: Dec. 1, 2024
+#Purpose: Shiny app code for calculating home ownership costs
+#####################################################################
 
-setwd("~/Finances/Home ownership costs/Home_ownership_costs")
-source("home_costs_fnct.R")
+
+
+#setwd()
+source("~/home_costs_fnct.R")
 
 library(shiny)
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- fluidPage(
 
     # Application title
@@ -73,7 +73,7 @@ ui <- fluidPage(
               )
 )
 
-# Define server logic required to draw a histogram
+# Define server logic required
 server <- function(input, output) {
   
   output$Costs <- renderText(
