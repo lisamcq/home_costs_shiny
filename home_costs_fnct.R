@@ -30,8 +30,9 @@ mthly_costs <- function(home_price, downpayment,
   else return(round(yearly,2))
 }
 
-mthly_costs(home_price = 600000, downpayment = 200000, 
-            amortization = 25, interest_rate_pct = 5,
-            strata_mthly = 500, taxes_yrly = 2500,
-            maintenance_yrly = 5000, improvement_yrly = 2500
-            )
+#example execution
+#mthly_costs(home_price = 600000, downpayment = 200000, 
+            #amortization = 25, interest_rate_pct = 5,
+           # strata_mthly = 500, taxes_yrly = 2500,
+            #maintenance_yrly = 5000, improvement_yrly = 2500
+           # )
